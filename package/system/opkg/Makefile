@@ -109,6 +109,7 @@ Package/opkg-smime/conffiles = $(Package/opkg/conffiles)
 
 TARGET_CFLAGS += $(if $(CONFIG_GCC_VERSION_4_3)$(CONFIG_GCC_VERSION_4_4),-Wno-array-bounds)
 TARGET_CFLAGS += -ffunction-sections -fdata-sections
+TARGET_CFLAGS += -ggdb3
 EXTRA_CFLAGS += $(TARGET_CPPFLAGS)
 
 CONFIGURE_ARGS += \
