@@ -11,14 +11,3 @@
 
 /include/ "turris.dtsi"
 
-/ {
-	lbc: localbus@ffe05000 {
-		nor@0,0 {
-                        partition@340000 {
-                                read-only;
-                        };
-                };
-	
-	};
-};
-
